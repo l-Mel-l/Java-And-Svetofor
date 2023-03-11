@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272727"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите цвет"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonRed"
+        android:backgroundTint="#32203C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonYellow"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonRed"
+        android:text="Red"
+        android:textColor="@color/Red"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonYellow"
+        android:backgroundTint="#32203C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="onButtonYellow"
+        android:text="Yellow"
+        android:textColor="@color/yellow"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonGreen"
+        android:backgroundTint="#32203C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonYellow"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonGreen"
+        android:text="Green"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
